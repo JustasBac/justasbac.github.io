@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a60cf626c9.js" crossorigin="anonymous"></script>
+    <title>Justas Portfolio</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" onclick="paspaude()">
+                <i class="fas fa-bars" ></i>
+            </label>
+        <label class="logo">
+               <a href="#izanga"><i class="fas fa-laptop-code"></i></a> 
+            </label>
+        <ul>
+            <li>
+                <a href="#infoMano">About me</a>
+            </li>
+            <li>
+                <a href="#manoSkill">My skills</a>
+            </li>
+            <li>
+                <a href="#myProjects">Projects</a>
+            </li>
+            <li>
+                <a href="#kontaktForma">Contact</a>
+            </li>
+            <li>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github-square"></i>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="izanga">
+            <div class="pirmasPsl">
+                <div class="tekstai">
+                    <div class="efektui stagger">
+                        <h1 data-text="WEB&nbsp;DEVELOPER">WEB DEVELOPER</h1>
+                    </div>
+
+                    <h2 class="stagger">Justas Bacinskas</h2>
+                    <h3 class="stagger">A passionate Front/Back-End Developer based in Germany who loves to create beautiful and user-friendly applications. Let's connect! </h3>
+                    <div class="wrapper stagger">
+                        <div class="mygtukas">
+                            <div class="icon">
+                                <i class=" fab fa-linkedin"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </div>
+                        <div class="mygtukas">
+                            <div class="icon">
+                                <i class=" fab fa-github"></i>
+                            </div>
+                            <span>Github</span>
+                        </div>
+                    </div>
+
+                    <img class="iliustracija" src="/public/svgs/kompiuterioLogo-01.svg" alt="">
+                </div>
+        </section>
+
+        <section id="infoMano">
+            <div class="fonas tranzicija">
+                <img src="/public/svgs/aboutMe.svg" alt="">
+            </div>
+            <div class="aboutMe">
+                <div class="grupe1">
+                    <img class="blondie tranzicija" src="public/svgs/manoLogo.svg" alt="">
+                </div>
+
+                <div class="grupe tranzicija">
+
+                    <h2>About me</h2>
+                    <h3>I am an Electrical Engineer that fell in love with web development. Even though programming was always one of my hobbies since I was a teenager my way to web development was not so straight. During my engineering studies I had courses
+                        in programming and I realised even more how I love all this mathematical logic and I was pretty good at it. I have always dreamed to find a field where I could feel so free and happy about. Thanks to web development I successfully
+                        achieved it 👌 <br> I have a good knowledge of both front-end and back-end techniques thanks to the Web Development bootcamp I finished and my practical projects!
+                    </h3>
+                    <form action="#">
+                        <button><span>My CV</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="manoSkill">
+            <div class="laukas">
+                <header class="pavadinimas tranzicija2">My skills</header>
+                <div class="skill tranzicija2">
+                    <div class="set pirmas">
+                        <span class="fas fa-globe"></span>
+                        <header class="frontend">Front-end</header>
+                        <div class="list">
+                            <label>HTML</label>
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="list">
+                            <label>CSS</label>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="list">
+                            <label>JavaScript</label>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="list">
+                            <label>SCSS</label>
+                            <i class="fab fa-sass"></i>
+                        </div>
+                        <div class="list">
+                            <label>Bootstrap</label>
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                    </div>
+                    <div class="set antras">
+                        <span class="fas fa-tools"></span>
+                        <header class="backend">Back-end</header>
+                        <div class="list">
+                            <label>Node.js</label>
+                            <i class="fab fa-node"></i>
+                        </div>
+                        <div class="list">
+                            <label>express.js</label>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="list">
+                            <label>EJS</label>
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="list">
+                            <label>mongoDB</label>
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="list">
+                            <label>RESTful</label>
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="list">
+                            <label>Terminal</label>
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                    </div>
+                    <div class="set trecias">
+                        <span class="fas fa-angle-double-right"></span>
+                        <header class="others">Others</header>
+                        <div class="list">
+                            <label>Git/GitHub</label>
+                            <i class="fab fa-git-square"></i>
+                        </div>
+                        <div class="list">
+                            <label>Heroku</label>
+                            <i><span class="iconify" data-icon="simple-icons:heroku" data-inline="false"></span></i>
+                            <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+                        </div>
+                        <div class="list">
+                            <label>Adobe Illustrator</label>
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="myProjects" class="tranzicija3">
+            <div class="container">
+                <div class="left pirmas">
+                    <div class="inner pasirinkti">
+                        <h1 class="tranzicija3">Camping website</h1>
+                        <p class="tranzicija3">The website for creating and sharing campgrounds with other users. The app is fully responsive and made by Node.js, express.js, MongoDB. Contains user authentification system, Mapbox API and Cloudinary for storing images uploaded
+                            by users.</p>
+                        <ul class="metodai tranzicija3">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>EJS</li>
+                            <li>Node.js</li>
+                            <li>express.js</li>
+                            <li>MongoDB</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div id="outer">
+                            <div class="inline tranzicija3">
+                                <a href="#">View code <i class="fab fa-github"></i></a>
+                                <a href="#">Demo <i class="fas fa-eye"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right pyrmas">
+                    <div class="fotke pirma">
+                        <div class="imgBox">
+                            <img src="/public/images/kempingas.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <a href=""><i class="fas fa-code"></i></a>
+                                <a href=""><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left antras">
+                    <div class="inner">
+                        <h1 class="tranzicija4">Portfolio website</h1>
+                        <p class="tranzicija4">This is the website that you are currently browsing. It is fully responsive and made with the pure CSS without any frameworks</p>
+                        <ul class="metodai tranzicija4">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SASS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div id="outer">
+                            <div class="inline tranzicija4">
+                                <a href="#">View code <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right antras">
+                    <div class="fotke antra tranzicija4">
+                        <div class="imgBox">
+                            <img src="/public/images/portfolioWebsite.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="content">
+                                <a href=""><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactMe tranzicija5">
+            <div class="container">
+                <div class="kontaktInfo tranzicija5">
+                    <div class="kitasStulpelis">
+                        <h2 class="tranzicija5">Contact me</h2>
+                        <ul class="info tranzicija5">
+                            <li>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span>Augsburg, Bavaria, Germany</span>
+                            </li>
+                            <li id="pastumimasIKaire">
+                                <span><i class="fas fa-envelope"></i></span>
+                                <span>justas.bac@outlook.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci tranzicija5">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+                <div id="kontaktForma" class="tranzicija5">
+                    <h2>Message me</h2>
+                    <div class="formBox tranzicija5">
+                        <form action="https://formspree.io/f/mjvjblgq" method="POST" id="formike">
+                            <div class="inputBox w50">
+                                <input type="text" name="vardas" id="vardas" onkeyup="tekstasIVirsu()">
+                                <span class="spenas">First name<span id="textukas[0]"></span></span>
+                            </div>
+                            <div class="inputBox w50">
+                                <input type="text" name="pavarde" id="pavarde" onkeyup="tekstasIVirsu()">
+                                <span class="spenas">Last name<span id="textukas[1]"></span></span>
+                            </div>
+                            <div class="inputBox w50 ">
+                                <input type="text" name="email" id="emailas" onkeyup="tekstasIVirsu()">
+                                <span class="spenas">Your email<span id="textukas[2]"></span>
+                                <i class="iconaEmailui fas"></i> <i class="fas iconaEmailuiDenied"></i>
+                            </div>
+                            <div class="inputBox w100">
+                                <textarea name="message" id="zinute" onkeyup="tekstasIVirsu()"></textarea>
+                                <span class="spenas">Your message<span id="textukas[3]"></span></span>
+                            </div>
+                            <div class="inputBox w100 tranzicija5">
+                                <button type="submit"><span>Send</span></button>
+                                <!-- <input type="submit " value="Send "> -->
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="tranzicija5">
+            <div class="footeris">
+                <span>© 2021 Portfolio by Justas Bacinskas</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script src="/public/app.js "></script>
+</body>
+
+</html>

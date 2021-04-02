@@ -1,0 +1,1487 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(131deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%), linear-gradient(148deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%), linear-gradient(138deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%, rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%, rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%, rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%), linear-gradient(38deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%), linear-gradient(145deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%, rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%, rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%, rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%, rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%), linear-gradient(78deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%, rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%, rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%, rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%, rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%), linear-gradient(293deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%, rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%, rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%, rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%, rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%), linear-gradient(90deg, #0091ad, #b7094c);
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 4em;
+}
+
+section {
+  padding: 1em 0.9em;
+  text-align: center;
+}
+
+section .apieMane {
+  display: none;
+}
+
+section#infoMano {
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+.iliustracija {
+  display: none;
+}
+
+.pirmasPsl h1 {
+  color: rgba(255, 192, 60, 0.8);
+  font-weight: 900;
+  font-size: 2.7em;
+  margin: 0;
+}
+
+.pirmasPsl h2 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.pirmasPsl h3 {
+  margin-top: 2.5em;
+  padding: 0 1em;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper .mygtukas {
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin: 0 0.8em;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .mygtukas .icon i {
+  font-size: 2em;
+  line-height: 1.45em;
+}
+
+.wrapper .mygtukas .icon .fa-linkedin {
+  color: #405e82;
+}
+
+.wrapper .mygtukas .icon .fa-github {
+  color: #211F1F;
+}
+
+.aboutMe h2 {
+  text-align: center;
+  font-size: 2.4em;
+  margin: 0;
+  color: rgba(255, 192, 60, 0.8);
+}
+
+.aboutMe h3 {
+  text-align: justify;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.aboutMe button {
+  background: rgba(114, 72, 116, 0.8);
+  color: rgba(255, 255, 255, 0.7);
+  border: 0.2rem solid;
+  border-radius: 0.5rem;
+  font-size: 1.1em;
+  height: 3em;
+  width: 8em;
+  margin-bottom: 4em;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.aboutMe button span::after {
+  margin-left: 0.5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: '\f1c1';
+  font-family: "Font Awesome 5 Free";
+}
+
+.aboutMe button:hover {
+  border-radius: 1rem;
+  background: rgba(31, 126, 153, 0.6);
+}
+
+.fonas {
+  display: none;
+}
+
+.blondie {
+  width: 20em;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  background: rgba(64, 94, 130, 0.4);
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  top: 0;
+}
+
+nav .logo {
+  display: none;
+}
+
+nav ul {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background: #7f3765;
+  top: 2.5em;
+  left: -100%;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  margin: 50px 0;
+  left: 0;
+  height: 2.2em;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6em;
+  text-decoration: none;
+  padding: .2em 1em;
+}
+
+nav ul li i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  margin: 0 0.4em;
+}
+
+nav .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 3.5rem;
+  /*turi but same*/
+  cursor: pointer;
+  display: block;
+  padding: 0 0.7em;
+}
+
+nav #check {
+  display: none;
+}
+
+nav #check:checked ~ ul {
+  left: 0em;
+}
+
+section#manoSkill {
+  position: relative;
+}
+
+section#manoSkill header.pavadinimas {
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: .5em;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+section#manoSkill .laukas {
+  margin: 4em 0;
+}
+
+section#manoSkill .laukas .skill {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+section#manoSkill .laukas .skill .set {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 24px;
+  border-radius: 16px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin: 0em 1em;
+}
+
+section#manoSkill .laukas .skill .set:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+section#manoSkill .laukas .skill .set.pirmas:hover .list {
+  color: rgba(40, 124, 150, 0.8);
+  text-shadow: none;
+}
+
+section#manoSkill .laukas .skill .set.antras:hover .list {
+  color: rgba(93, 81, 123, 0.8);
+  text-shadow: none;
+}
+
+section#manoSkill .laukas .skill .set.trecias:hover .list {
+  color: rgba(130, 53, 104, 0.8);
+  text-shadow: none;
+}
+
+section#manoSkill .laukas .skill .set span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 35%;
+  margin-inline: auto;
+}
+
+section#manoSkill .laukas .skill .set span.fa-globe {
+  background-color: rgba(55, 108, 138, 0.8);
+}
+
+section#manoSkill .laukas .skill .set span.fa-tools {
+  background-color: rgba(93, 81, 123, 0.8);
+}
+
+section#manoSkill .laukas .skill .set span.fa-angle-double-right {
+  background-color: rgba(130, 53, 104, 0.8);
+}
+
+section#manoSkill .laukas .skill .set header {
+  padding-block: 24px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section#manoSkill .laukas .skill .set header.frontend {
+  color: rgba(55, 108, 138, 0.8);
+}
+
+section#manoSkill .laukas .skill .set header.backend {
+  color: rgba(93, 81, 123, 0.8);
+}
+
+section#manoSkill .laukas .skill .set header.others {
+  color: rgba(130, 53, 104, 0.8);
+}
+
+section#manoSkill .laukas .skill .set .list {
+  padding: 8px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px;
+      grid-template-columns: 1fr 28px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+  text-align: start;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section#manoSkill .laukas .skill .set .list i {
+  font-size: 1.3em;
+}
+
+section#manoSkill .laukas .skill .set .list i .iconify {
+  color: rgba(114, 72, 116, 0.5);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section#manoSkill .laukas .skill .set:hover .list i .iconify {
+  background: rgba(130, 53, 104, 0.8);
+  text-shadow: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section#myProjects {
+  margin-top: 5em;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+section#myProjects .container {
+  padding-bottom: 3.5em;
+}
+
+section#myProjects .container .left {
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  height: 100%;
+}
+
+section#myProjects .container .left .inner {
+  margin-top: 2em;
+  padding: 0.5em 2em;
+  color: rgba(127, 55, 101, 0.8);
+  font-weight: 400;
+}
+
+section#myProjects .container .left .inner h1 {
+  color: rgba(63, 61, 86, 0.8);
+  font-size: 2.1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 1em;
+}
+
+section#myProjects .container .left ul.metodai {
+  padding: 0;
+  text-align: left;
+}
+
+section#myProjects .container .left ul.metodai li {
+  font-size: 0.8em;
+  padding: 0.3em 0.6em;
+  background: rgba(127, 55, 101, 0.8);
+  display: inline;
+  margin-right: 0.4em;
+  line-height: 2.5em;
+  color: white;
+  font-weight: 500;
+}
+
+section#myProjects .container .left #outer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+section#myProjects .container .left #outer .inline {
+  display: inline;
+  margin: 1em 0;
+}
+
+section#myProjects .container .left #outer .inline a {
+  color: rgba(127, 55, 101, 0.8);
+  font-size: 0.9em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  border: solid rgba(127, 55, 101, 0.8);
+  border-width: thin;
+  padding: 0.4em 1em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+section#myProjects .container .left #outer .inline a:nth-of-type(1) {
+  margin-right: 1em;
+}
+
+section#myProjects .container .left #outer .inline a:hover {
+  border-radius: 0.8em;
+  background: rgba(127, 55, 101, 0.8);
+  color: white;
+}
+
+section#myProjects .container .left #outer .inline a i {
+  font-size: 1.2em;
+}
+
+section#myProjects .container .right {
+  margin: auto;
+}
+
+section#myProjects .container .right .fotke {
+  position: relative;
+  width: 80%;
+  display: inline-block;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+section#myProjects .container .right .fotke .imgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+section#myProjects .container .right .fotke .imgBox img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: 1em;
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+section#myProjects .container .right .fotke:hover .imgBox img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#myProjects .container .right .fotke .details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 1em;
+}
+
+section#myProjects .container .right .fotke .details .content {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section#myProjects .container .right .fotke .details .content a {
+  color: #fff;
+}
+
+section#myProjects .container .right .fotke .details .content a i {
+  font-size: 3.3em;
+  padding: 0.3em;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section#myProjects .container .right .fotke .details .content a i:first-of-type {
+  margin-right: 0.3em;
+}
+
+section#myProjects .container .right .fotke .details .content a i:hover {
+  color: #7f3765;
+}
+
+section#myProjects .container .right .fotke:hover .details {
+  background: rgba(101, 101, 101, 0.5);
+}
+
+section#myProjects .container .right .fotke:hover .details .content {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.contactMe {
+  margin-top: 18em;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.contactMe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+section.contactMe .container {
+  position: relative;
+  min-width: 85vw;
+  min-height: 584px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 800;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contactMe .container .kontaktInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -20em;
+  width: 70vw;
+  height: 24em;
+  background: #5b4b70;
+  z-index: 1;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis {
+  margin-top: 1.2em;
+  padding: 0 1.4em;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li span:nth-child(1) {
+  font-size: 40px;
+  min-width: 30px;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li span:nth-child(1) i {
+  max-width: 100%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li:hover span:nth-child(1) i,
+section.contactMe .container .kontaktInfo .kitasStulpelis .info li:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+section.contactMe .container .kontaktInfo .sci {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.contactMe .container .kontaktInfo .sci li {
+  list-style: none;
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+section.contactMe .container .kontaktInfo .sci li a {
+  text-decoration: none;
+}
+
+section.contactMe .container .kontaktInfo .sci li a i {
+  color: #fff;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.contactMe .container .kontaktInfo .sci li:hover a i {
+  opacity: 1;
+}
+
+section.contactMe .container #kontaktForma {
+  position: absolute;
+  padding: 4em 3em;
+  background: #fff;
+  margin-top: 180px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+section.contactMe .container #kontaktForma h2 {
+  margin-top: 3.5em;
+  color: #5b4b70;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section.contactMe .container #kontaktForma .formBox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding: 0 2em;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox {
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox.w50, section.contactMe .container #kontaktForma .formBox .inputBox.w100 {
+  width: 100%;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox input,
+section.contactMe .container #kontaktForma .formBox .inputBox textarea {
+  resize: none;
+  width: 100% !important;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox input:focus ~ span.spenas,
+section.contactMe .container #kontaktForma .formBox .inputBox input.tekstasYra ~ span.spenas,
+section.contactMe .container #kontaktForma .formBox .inputBox textarea:focus ~ span.spenas,
+section.contactMe .container #kontaktForma .formBox .inputBox textarea.tekstasYra ~ span.spenas {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ab2256;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox textarea {
+  min-height: 120px;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox span.spenas {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox button {
+  all: unset;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox button span {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+  background: #5b4b70;
+  color: #fff;
+  border: none;
+  max-width: 150px;
+  padding: 12px 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.contactMe .container #kontaktForma .formBox .inputBox button span:hover {
+  background: #ab2256;
+  border-radius: 0.7em;
+}
+
+footer {
+  background: #684e78;
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footeris {
+  margin-left: 15%;
+  font-weight: 300;
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 692px) {
+  .skill {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section#infoMano {
+    margin-top: 3em;
+    margin-bottom: 0em;
+  }
+  section#manoSkill .laukas {
+    margin: 0;
+  }
+  .aboutMe .grupe h3 {
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 858px) {
+  nav {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(64, 94, 130, 0.4);
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    top: 0;
+  }
+  nav .logo {
+    all: unset;
+    display: relative;
+    font-size: 2.3em;
+    line-height: 3.5rem;
+    margin-left: 12.5vw;
+  }
+  nav .logo a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: rgba(119, 68, 111, 0.5);
+  }
+  nav .logo:hover a {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  nav ul {
+    all: unset;
+    float: right;
+    margin-top: 0;
+    margin-right: 2em;
+    left: 0%;
+    background: none;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 3.5em;
+    /*turi but same*/
+    margin: 0 0.2em;
+  }
+  nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1em;
+    padding: 0.4em 0.7em;
+    border-radius: 3px;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav ul li i:first-of-type {
+    margin-left: 4em;
+  }
+  nav ul li i {
+    margin-right: 0em;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0.1em 0.1em;
+    font-size: 1.5em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  nav ul li i:hover {
+    color: #1a92ad;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: rgba(40, 124, 150, 0.8);
+    color: white;
+  }
+  nav .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 3.5rem;
+    /*turi but same*/
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  nav #check {
+    display: none;
+  }
+  .aboutMe {
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  section#myProjects .container {
+    padding-bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  section#myProjects .container .left {
+    text-align: start;
+  }
+  section#myProjects .container .left .inline {
+    float: left;
+  }
+  section#myProjects .container .left .inner h1 {
+    margin: 0;
+  }
+  section#myProjects .container .left.pirmas {
+    margin-left: 3em;
+  }
+  section#myProjects .container .right.antras {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .pirmasPsl .tekstai .efektui {
+    position: relative;
+    height: 7em;
+    width: 90%;
+  }
+  .pirmasPsl .tekstai .efektui h1 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 900;
+    font-size: 6.5em;
+    -webkit-text-stroke: 0.02vw rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-left: 5%;
+  }
+  .pirmasPsl .tekstai .efektui h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-text-stroke: 0vw rgba(255, 255, 255, 0.4);
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    -webkit-animation: animate 4s linear infinite;
+            animation: animate 4s linear infinite;
+    display: block;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  }
+  @-webkit-keyframes animate {
+    30% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  @keyframes animate {
+    30% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  .pirmasPsl .tekstai h2 {
+    position: relative;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 2.5em;
+    margin: 0;
+    margin-left: 10%;
+    display: block;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    width: 40%;
+    text-align: left;
+  }
+  .pirmasPsl .tekstai h3 {
+    position: relative;
+    padding: 0;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 1.1em;
+    display: block;
+    width: 40%;
+    letter-spacing: 0.05vw;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+  .pirmasPsl .tekstai .wrapper {
+    width: 40%;
+    margin-left: 5%;
+    text-align: left;
+    padding-left: 8em;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas {
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    /* float: left; */
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:hover {
+    width: 9rem;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:hover .icon {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas .icon {
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    line-height: 2.8rem;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas .icon i {
+    /* transform: scale(1.6); */
+    font-size: 2rem;
+    line-height: 2.8rem;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    top: -9%;
+    margin-left: 0.2rem;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(1) span {
+    color: #2867B2;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(1) i {
+    color: #296382;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(1):hover i {
+    color: #2867B2;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(2) i {
+    color: #ad5c51;
+  }
+  .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(2):hover i {
+    color: #211F1F;
+  }
+  .pirmasPsl .tekstai .iliustracija {
+    display: unset;
+    position: absolute;
+    width: 50vw;
+    left: 45%;
+    top: 22%;
+  }
+  #infoMano {
+    padding: 3em 0;
+    position: relative;
+  }
+  #infoMano .fonas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    opacity: 0.4;
+    width: 100%;
+    top: 18%;
+    -webkit-transform: scaleY(1.3);
+            transform: scaleY(1.3);
+  }
+  #infoMano .aboutMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #infoMano .aboutMe .grupe1 {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-top: 2em;
+  }
+  #infoMano .aboutMe .grupe1 .blondie {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #infoMano .aboutMe .grupe {
+    float: right;
+    position: relative;
+    width: 50%;
+    padding: 0 2em;
+  }
+  #infoMano .aboutMe .grupe h2 {
+    font-size: 2.8em;
+    color: rgba(114, 72, 116, 0.8);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #infoMano .aboutMe .grupe h2:hover {
+    color: rgba(31, 126, 153, 0.5);
+  }
+  #infoMano .aboutMe .grupe h3 {
+    font-size: 1em;
+  }
+  #infoMano .aboutMe .grupe button {
+    border: none;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    height: 2.4em;
+    width: 6.5em;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  section.contactMe {
+    margin-top: 0em;
+  }
+  section.contactMe .container {
+    min-width: 55vw;
+    min-height: 550px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.contactMe .container .kontaktInfo {
+    top: 40px;
+    left: -200px;
+    width: 16vw;
+    height: calc(100% - 80px);
+    padding: 40px;
+  }
+  section.contactMe .container .kontaktInfo .kitasStulpelis {
+    padding: 0;
+    padding-left: 1em;
+  }
+  section.contactMe .container .kontaktInfo .kitasStulpelis .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.contactMe .container .kontaktInfo .kitasStulpelis .info li i.fa-map-marker-alt {
+    margin-left: 0.1em;
+  }
+  section.contactMe .container #kontaktForma {
+    padding: 4em 1em;
+    left: 0;
+    margin-top: 0;
+    padding-left: 8vw;
+    width: calc(100% - 50px);
+    height: 92%;
+    -webkit-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  section.contactMe .container #kontaktForma h2 {
+    margin-top: 0em;
+    margin-bottom: 2em;
+    color: #5b4b70;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 1.3em;
+  }
+  section.contactMe .container #kontaktForma .formBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #infoMano .fonas {
+    top: 12%;
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1213px) {
+  section#myProjects .container .left .inner h1 {
+    font-size: 2.4em;
+  }
+  section#myProjects .container .right.pyrmas {
+    margin-top: 0.3em;
+  }
+  section#izanga {
+    height: 70vh;
+  }
+  section#izanga .pirmasPsl .tekstai .iliustracija {
+    top: 32%;
+    left: 28%;
+    width: 70vw;
+  }
+  #infoMano .fonas {
+    top: 7%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  #infoMano .aboutMe .grupe h3 {
+    font-size: 1.05em;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1300px) {
+  section#myProjects .container .right .fotke.pirma {
+    margin-top: -4%;
+  }
+  section#myProjects .container .right .fotke.antra {
+    margin-bottom: -4%;
+  }
+  section#izanga {
+    height: 75vh;
+  }
+  #infoMano .aboutMe .grupe h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1380px) {
+  section#izanga {
+    height: 80vh;
+  }
+  .pirmasPsl {
+    height: 100%;
+    padding-bottom: 0em;
+  }
+  .pirmasPsl .tekstai {
+    height: 100%;
+  }
+  .pirmasPsl .tekstai .efektui {
+    height: 8.3em;
+  }
+  .pirmasPsl .tekstai .efektui h1 {
+    font-size: 7.5em;
+    height: 100%;
+  }
+  .pirmasPsl .tekstai h2 {
+    font-size: 2.8em;
+  }
+  .pirmasPsl .tekstai h3 {
+    width: 32%;
+    font-size: 1.1em;
+  }
+  #infoMano .fonas {
+    top: 0%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  #infoMano .aboutMe .grupe1 {
+    padding: 0;
+    margin-top: 0;
+  }
+  #infoMano .aboutMe .grupe1 .blondie {
+    padding-bottom: 2em;
+    width: 25vw;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1500px) {
+  section#myProjects .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  section#myProjects .container .left {
+    padding-left: 6em;
+    padding-right: 2em;
+  }
+  section#myProjects .container .left .inner h1 {
+    font-size: 3em;
+  }
+  section#myProjects .container .left .inner.pasirinkti {
+    margin-top: 2em;
+    margin-bottom: 6em;
+  }
+  section#myProjects .container .left.antras {
+    padding-left: 2em;
+    padding-right: 6em;
+  }
+  #infoMano .aboutMe .grupe1 {
+    padding: 0;
+  }
+  #infoMano .aboutMe .grupe h3 {
+    padding: 0 4em;
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  #infoMano .aboutMe .grupe h2 {
+    font-size: 3.5em;
+  }
+  section.contactMe .container {
+    left: 6em;
+  }
+  section.contactMe .container #kontaktForma {
+    padding: 4em 3em;
+    left: 0;
+    margin-top: 0;
+    padding-left: 12vw;
+    width: calc(100% - 400px);
+    height: 92%;
+    -webkit-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1650px) {
+  section#myProjects .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+  }
+  section#myProjects .container .left.pirmas {
+    padding-left: 8em;
+    padding-right: 2em;
+  }
+  section#myProjects .container .left.antras {
+    padding-left: 2em;
+    padding-right: 12em;
+  }
+  section#myProjects .container .left.antras .inner {
+    padding-top: 2em;
+  }
+  section#myProjects .container .right .fotke.pirma {
+    margin-right: 17%;
+    margin-bottom: 2.5em;
+  }
+  section#myProjects .container .right .fotke.antra {
+    margin-left: 17%;
+  }
+  section#izanga .pirmasPsl .tekstai {
+    margin-top: 2em;
+  }
+  section#izanga .pirmasPsl .tekstai .efektui {
+    height: 20%;
+  }
+  section#izanga .pirmasPsl .tekstai .efektui h1 {
+    font-size: 9em;
+  }
+  section#izanga .pirmasPsl .tekstai h2 {
+    font-size: 3.2em;
+  }
+  section#izanga .pirmasPsl .tekstai h3 {
+    width: 32vw;
+  }
+  section#izanga .pirmasPsl .tekstai .iliustracija {
+    width: 60vw;
+    left: 37%;
+  }
+  #infoMano .aboutMe .grupe1 {
+    padding: 0;
+  }
+  #infoMano .aboutMe .grupe {
+    margin-top: 2em;
+  }
+  #infoMano .aboutMe .grupe h3 {
+    padding: 0 4em;
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 1.1vw;
+  }
+  #infoMano .aboutMe .grupe h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 1880px) {
+  section#myProjects .container .left.pirmas {
+    padding-right: 1em;
+  }
+  section#myProjects .container .left.antras .inner {
+    padding-top: 2em;
+  }
+  section#myProjects .container .right .fotke.pirma {
+    margin-bottom: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 2800px) {
+  .pirmasPsl .tekstai h3 {
+    font-size: 2em;
+  }
+  #infoMano .aboutMe .grupe button {
+    font-size: 1.7em;
+  }
+  #manoSkill .laukas {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 1140px) and (min-width: 3700px) {
+  section#izanga .pirmasPsl .tekstai .efektui h1 {
+    font-size: 16em;
+  }
+  section#izanga .pirmasPsl .tekstai h2 {
+    font-size: 7em;
+  }
+  section#izanga .pirmasPsl .tekstai h3 {
+    font-size: 2.5em;
+  }
+  #infoMano .aboutMe .grupe h2 {
+    margin-top: 1em;
+    font-size: 7em;
+  }
+  #infoMano .aboutMe .grupe button {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+  section#manoSkill {
+    margin-top: 20em;
+  }
+  section#manoSkill .laukas {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  section#myProjects {
+    margin-top: 20em;
+  }
+  section#myProjects .container .left {
+    font-size: 1.8em;
+  }
+  section#myProjects .container .left.antras {
+    font-size: 1.8em;
+  }
+  section.contactMe {
+    padding: 0;
+  }
+  section.contactMe .container {
+    left: 28em;
+    margin: 0;
+  }
+  section.contactMe .container .kontaktInfo {
+    width: 10vw;
+    font-size: 1.4em;
+  }
+  section.contactMe .container #kontaktForma {
+    padding-left: 8vw;
+    width: calc(100% - 1200px);
+  }
+}
+/*# sourceMappingURL=app.css.map */

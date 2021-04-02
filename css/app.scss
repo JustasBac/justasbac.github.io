@@ -1,0 +1,1440 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(131deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001000000000005%, rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.33500000000001%, rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%), linear-gradient(148deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001000000000005%, rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.33500000000001%, rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%), linear-gradient(138deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%, rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%, rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%, rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%), linear-gradient(38deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001000000000005%, rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.33500000000001%, rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%), linear-gradient(145deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%, rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%, rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%, rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%, rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%), linear-gradient(78deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%, rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%, rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%, rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%, rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%), linear-gradient(293deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%, rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%, rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%, rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%, rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%), linear-gradient(90deg, rgb(0, 145, 173), rgb(183, 9, 76));
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 4em;
+}
+
+section {
+    // border: solid;
+    padding: 1em 0.9em;
+    text-align: center;
+    .apieMane {
+        display: none;
+    }
+    &#infoMano {
+        margin-top: 3em;
+        margin-bottom: 6em;
+    }
+}
+
+.iliustracija {
+    display: none;
+}
+
+.pirmasPsl {
+    h1 {
+        color: rgba(255, 192, 60, 0.8);
+        font-weight: 900;
+        font-size: 2.7em;
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        font-size: 2em;
+    }
+    h3 {
+        margin-top: 2.5em;
+        padding: 0 1em;
+        font-weight: 300;
+        font-size: 1.3em;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    }
+}
+
+.wrapper {
+    position: relative;
+    .mygtukas {
+        display: inline-block;
+        height: 2.8rem;
+        width: 2.8rem;
+        margin: 0 0.8em;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        .icon {
+            i {
+                font-size: 2em;
+                line-height: 1.45em;
+            }
+            .fa-linkedin {
+                color: rgba(64, 94, 130, 1);
+            }
+            .fa-github {
+                color: #211F1F;
+            }
+        }
+    }
+}
+
+.aboutMe {
+    h2 {
+        text-align: center;
+        font-size: 2.4em;
+        margin: 0;
+        color: rgba(255, 192, 60, 0.8);
+    }
+    h3 {
+        text-align: justify;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    button {
+        // all: unset;
+        background: rgba(114, 72, 116, 0.8);
+        color: rgba(255, 255, 255, 0.7);
+        border: 0.2rem solid;
+        border-radius: 0.5rem;
+        font-size: 1.1em;
+        height: 3em;
+        width: 8em;
+        margin-bottom: 4em;
+        cursor: pointer;
+        transition: 0.5s;
+        span {
+            &::after {
+                margin-left: 0.5em;
+                transition: .3s;
+                content: '\f1c1';
+                font-family: "Font Awesome 5 Free";
+            }
+        }
+        &:hover {
+            border-radius: 1rem;
+            background: rgba(31, 126, 153, 0.6);
+        }
+    }
+}
+
+.fonas {
+    display: none;
+}
+
+.blondie {
+    width: 20em;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background: rgba(64, 94, 130, 0.4);
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    top: 0;
+    .logo {
+        display: none;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: rgb(127, 55, 101);
+        top: 2.5em;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        padding: 0;
+        li {
+            display: block;
+            margin: 50px 0;
+            left: 0;
+            height: 2.2em;
+            a {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 1.6em;
+                text-decoration: none;
+                padding: .2em 1em;
+            }
+            i {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 2em;
+                margin: 0 0.4em;
+            }
+        }
+    }
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 3.5rem;
+        /*turi but same*/
+        cursor: pointer;
+        display: block;
+        padding: 0 0.7em;
+    }
+    #check {
+        display: none;
+    }
+    #check:checked~ul {
+        left: 0em;
+    }
+}
+
+section#manoSkill {
+    header.pavadinimas {
+        font-size: 3em;
+        // font-weight: bold;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: .5em;
+        text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.2);
+    }
+    position: relative;
+    .laukas {
+        margin: 4em 0;
+        .skill {
+            display: grid;
+            grid-gap: 16px;
+            padding: 16px;
+            max-width: 1024px;
+            margin-inline: auto;
+            .set {
+                background-color: rgba(255, 255, 255, 0.4);
+                padding: 24px;
+                border-radius: 16px;
+                transition: 0.5s ease;
+                margin: 0em 1em;
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: rgba(255, 255, 255, 0.8);
+                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+                }
+                &.pirmas {
+                    &:hover .list {
+                        color: rgba(40, 124, 150, 0.8);
+                        text-shadow: none;
+                    }
+                }
+                &.antras {
+                    &:hover .list {
+                        color: rgba(93, 81, 123, 0.8);
+                        text-shadow: none;
+                    }
+                }
+                &.trecias {
+                    &:hover .list {
+                        color: rgba(130, 53, 104, 0.8);
+                        text-shadow: none;
+                    }
+                }
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 80px;
+                    font-size: 48px;
+                    color: rgba(255, 255, 255, 0.8);
+                    // background-color: rgba(114, 72, 116, 0.8);
+                    border-radius: 35%;
+                    margin-inline: auto;
+                    &.fa-globe {
+                        background-color: rgba(55, 108, 138, 0.8);
+                    }
+                    &.fa-tools {
+                        background-color: rgba(93, 81, 123, 0.8);
+                    }
+                    &.fa-angle-double-right {
+                        background-color: rgba(130, 53, 104, 0.8);
+                    }
+                }
+                header {
+                    padding-block: 24px;
+                    font-size: 24px;
+                    // color: rgba(114, 72, 116, 0.8);
+                    text-align: center;
+                    text-transform: uppercase;
+                    &.frontend {
+                        color: rgba(55, 108, 138, 0.8);
+                    }
+                    &.backend {
+                        color: rgba(93, 81, 123, 0.8);
+                    }
+                    &.others {
+                        color: rgba(130, 53, 104, 0.8);
+                    }
+                }
+                .list {
+                    // width: 10em;
+                    padding: 8px 0;
+                    // padding-inline-start: 3.3em;
+                    display: grid;
+                    grid-template-columns: 1fr 28px;
+                    color: rgba(255, 255, 255, 0.9);
+                    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+                    text-align: start;
+                    transition: 0.5s ease;
+                    i {
+                        font-size: 1.3em;
+                        .iconify {
+                            // width: 10%;
+                            color: rgba(114, 72, 116, 0.5);
+                            background: rgba(255, 255, 255, 0.8);
+                            border-radius: 2px;
+                            transition: 0.5s ease;
+                        }
+                    }
+                }
+                &:hover .list i .iconify {
+                    background: rgba(130, 53, 104, 0.8);
+                    text-shadow: none;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+            }
+        }
+    }
+}
+
+section#myProjects {
+    // border: solid purple;
+    margin-top: 5em;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.7);
+    // background-image: linear-gradient(158deg, rgba(84, 84, 84, 0.03) 0%, rgba(84, 84, 84, 0.03) 20%, rgba(219, 219, 219, 0.03) 20%, rgba(219, 219, 219, 0.03) 40%, rgba(54, 54, 54, 0.03) 40%, rgba(54, 54, 54, 0.03) 60%, rgba(99, 99, 99, 0.03) 60%, rgba(99, 99, 99, 0.03) 80%, rgba(92, 92, 92, 0.03) 80%, rgba(92, 92, 92, 0.03) 100%), linear-gradient(45deg, rgba(221, 221, 221, 0.02) 0%, rgba(221, 221, 221, 0.02) 14.286%, rgba(8, 8, 8, 0.02) 14.286%, rgba(8, 8, 8, 0.02) 28.572%, rgba(52, 52, 52, 0.02) 28.572%, rgba(52, 52, 52, 0.02) 42.858%, rgba(234, 234, 234, 0.02) 42.858%, rgba(234, 234, 234, 0.02) 57.144%, rgba(81, 81, 81, 0.02) 57.144%, rgba(81, 81, 81, 0.02) 71.42999999999999%, rgba(239, 239, 239, 0.02) 71.43%, rgba(239, 239, 239, 0.02) 85.71600000000001%, rgba(187, 187, 187, 0.02) 85.716%, rgba(187, 187, 187, 0.02) 100.002%), linear-gradient(109deg, rgba(33, 33, 33, 0.03) 0%, rgba(33, 33, 33, 0.03) 12.5%, rgba(147, 147, 147, 0.03) 12.5%, rgba(147, 147, 147, 0.03) 25%, rgba(131, 131, 131, 0.03) 25%, rgba(131, 131, 131, 0.03) 37.5%, rgba(151, 151, 151, 0.03) 37.5%, rgba(151, 151, 151, 0.03) 50%, rgba(211, 211, 211, 0.03) 50%, rgba(211, 211, 211, 0.03) 62.5%, rgba(39, 39, 39, 0.03) 62.5%, rgba(39, 39, 39, 0.03) 75%, rgba(55, 55, 55, 0.03) 75%, rgba(55, 55, 55, 0.03) 87.5%, rgba(82, 82, 82, 0.03) 87.5%, rgba(82, 82, 82, 0.03) 100%), linear-gradient(348deg, rgba(42, 42, 42, 0.02) 0%, rgba(42, 42, 42, 0.02) 20%, rgba(8, 8, 8, 0.02) 20%, rgba(8, 8, 8, 0.02) 40%, rgba(242, 242, 242, 0.02) 40%, rgba(242, 242, 242, 0.02) 60%, rgba(42, 42, 42, 0.02) 60%, rgba(42, 42, 42, 0.02) 80%, rgba(80, 80, 80, 0.02) 80%, rgba(80, 80, 80, 0.02) 100%), linear-gradient(120deg, rgba(106, 106, 106, 0.03) 0%, rgba(106, 106, 106, 0.03) 14.286%, rgba(67, 67, 67, 0.03) 14.286%, rgba(67, 67, 67, 0.03) 28.572%, rgba(134, 134, 134, 0.03) 28.572%, rgba(134, 134, 134, 0.03) 42.858%, rgba(19, 19, 19, 0.03) 42.858%, rgba(19, 19, 19, 0.03) 57.144%, rgba(101, 101, 101, 0.03) 57.144%, rgba(101, 101, 101, 0.03) 71.42999999999999%, rgba(205, 205, 205, 0.03) 71.43%, rgba(205, 205, 205, 0.03) 85.71600000000001%, rgba(53, 53, 53, 0.03) 85.716%, rgba(53, 53, 53, 0.03) 100.002%), linear-gradient(45deg, rgba(214, 214, 214, 0.03) 0%, rgba(214, 214, 214, 0.03) 16.667%, rgba(255, 255, 255, 0.03) 16.667%, rgba(255, 255, 255, 0.03) 33.334%, rgba(250, 250, 250, 0.03) 33.334%, rgba(250, 250, 250, 0.03) 50.001000000000005%, rgba(231, 231, 231, 0.03) 50.001%, rgba(231, 231, 231, 0.03) 66.668%, rgba(241, 241, 241, 0.03) 66.668%, rgba(241, 241, 241, 0.03) 83.33500000000001%, rgba(31, 31, 31, 0.03) 83.335%, rgba(31, 31, 31, 0.03) 100.002%), linear-gradient(59deg, rgba(224, 224, 224, 0.03) 0%, rgba(224, 224, 224, 0.03) 12.5%, rgba(97, 97, 97, 0.03) 12.5%, rgba(97, 97, 97, 0.03) 25%, rgba(143, 143, 143, 0.03) 25%, rgba(143, 143, 143, 0.03) 37.5%, rgba(110, 110, 110, 0.03) 37.5%, rgba(110, 110, 110, 0.03) 50%, rgba(34, 34, 34, 0.03) 50%, rgba(34, 34, 34, 0.03) 62.5%, rgba(155, 155, 155, 0.03) 62.5%, rgba(155, 155, 155, 0.03) 75%, rgba(249, 249, 249, 0.03) 75%, rgba(249, 249, 249, 0.03) 87.5%, rgba(179, 179, 179, 0.03) 87.5%, rgba(179, 179, 179, 0.03) 100%), linear-gradient(241deg, rgba(58, 58, 58, 0.02) 0%, rgba(58, 58, 58, 0.02) 25%, rgba(124, 124, 124, 0.02) 25%, rgba(124, 124, 124, 0.02) 50%, rgba(254, 254, 254, 0.02) 50%, rgba(254, 254, 254, 0.02) 75%, rgba(52, 52, 52, 0.02) 75%, rgba(52, 52, 52, 0.02) 100%), linear-gradient(90deg, #ffffff, #ffffff);
+    .container {
+        // padding: 10em;
+        // margin-top: -1%;
+        // margin: 0em 2em;
+        // border: solid green;
+        // width: 98%;
+        // align-items: stretch;
+        // height: 100%;
+        padding-bottom: 3.5em;
+        .left {
+            // float: left;
+            // width: 40%;
+            // border: solid purple;
+            margin: 0;
+            margin-bottom: 1em;
+            padding: 0;
+            height: 100%;
+            .inner {
+                // border: solid;
+                margin-top: 2em;
+                padding: 0.5em 2em;
+                color: rgba(127, 55, 101, 0.8);
+                font-weight: 400;
+                h1 {
+                    color: rgba(63, 61, 86, 0.8);
+                    font-size: 2.1em;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin: 0;
+                    margin-top: 1em;
+                }
+            }
+            ul.metodai {
+                padding: 0;
+                text-align: left;
+                li {
+                    font-size: 0.8em;
+                    padding: 0.3em 0.6em;
+                    background: rgba(127, 55, 101, 0.8);
+                    display: inline;
+                    margin-right: 0.4em;
+                    line-height: 2.5em;
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+            #outer {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                .inline {
+                    display: inline;
+                    // float: left;
+                    margin: 1em 0;
+                    a {
+                        color: rgba(127, 55, 101, 0.8);
+                        font-size: 0.9em;
+                        border-radius: 0.4em;
+                        text-decoration: none;
+                        border: solid rgba(127, 55, 101, 0.8);
+                        border-width: thin;
+                        padding: 0.4em 1em;
+                        transition: .5s;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        &:nth-of-type(1) {
+                            margin-right: 1em;
+                        }
+                        &:hover {
+                            border-radius: 0.8em;
+                            background: rgba(127, 55, 101, 0.8);
+                            color: white;
+                        }
+                        i {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            margin: auto;
+            // padding-left: 9%;
+            .fotke {
+                // margin-right: 4em;
+                position: relative;
+                width: 80%;
+                // height: 72%;
+                // box-sizing: border-box;
+                display: inline-block;
+                border-radius: 1em;
+                // top: 0;
+                overflow: hidden;
+                // margin-top: -5%; //Ideti i media query
+                // margin-left: 50em;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+                .imgBox {
+                    // max-width: 100%; nuemiau
+                    position: relative;
+                    overflow: hidden;
+                    // height: 100%;
+                    border-radius: 1em;
+                    img {
+                        display: flex;
+                        width: 100%;
+                        border-radius: 1em;
+                        max-width: 100%;
+                        transition: transform 0.5s;
+                    }
+                }
+                &:hover .imgBox img {
+                    transform: scale(1.1);
+                }
+                .details {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    // transform: scale(0);
+                    transition: .5s;
+                    border-radius: 1em;
+                    .content {
+                        // border: solid;
+                        position: absolute;
+                        width: 100%;
+                        // height: 10%;
+                        top: 40%;
+                        transform: scale(0);
+                        text-align: center;
+                        transition: .3s;
+                        a {
+                            color: #fff;
+                            i {
+                                font-size: 3.3em;
+                                padding: 0.3em;
+                                border-radius: 50%;
+                                background: rgba(0, 0, 0, 0.4);
+                                transition: 0.3s;
+                                &:first-of-type {
+                                    margin-right: 0.3em;
+                                }
+                                &:hover {
+                                    color: rgba(127, 55, 101, 1);
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .details {
+                    background: rgba(101, 101, 101, 0.5);
+                }
+                &:hover .details .content {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+section.contactMe {
+    margin-top: 18em; //sita pakeist i 5em kai dideja rezoliucija
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; //sita pakeist i 100vh kai dideja rezoliucija
+    // background: rgba(255, 255, 255, 0.2); //ijungt kai rezoliucija dideja
+    display: flex;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        // background: rgba(127, 55, 101, 0.5); //ijungt kai rezoliucija dideja
+    }
+    .container {
+        position: relative;
+        min-width: 85vw; //sita pakeist i 55vw kai rezoliucija dideja
+        min-height: 584px; //sita pakeist i 550px kai rezoliucija dideja
+        display: flex;
+        z-index: 800;
+        justify-content: center; //sita istrint kai rezoliucija dideja
+        // left: 50%;
+        .kontaktInfo {
+            display: flex;
+            position: absolute;
+            top: -20em; //sita pakeist i 40px kai dideja
+            // left: 1.2em; //sita pakeist i -200px kai rezoliucija dideja
+            width: 70vw; //sita pakeist i 16vw kai rezoliucija dideja
+            // height: calc(100% - 80px); //sita pajungt kai rezoliucija dideja
+            height: 24em; //sita ISTRINT kai rezoliucija dideja
+            background: rgb(91, 75, 112);
+            z-index: 1;
+            // padding: 40px; //sita pajungt kai rezoliucija dideja!
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+            .kitasStulpelis {
+                margin-top: 1.2em;
+                padding: 0 1.4em; //sita istrint kai rezoliucija dideja
+                h2 {
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+                .info {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column; //sita istrint kai rezoliucija dideja
+                    flex-wrap: wrap;
+                    li {
+                        position: relative;
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 20px 0em;
+                        align-items: center;
+                        justify-content: center;
+                        span:nth-child(1) {
+                            font-size: 40px;
+                            min-width: 30px;
+                            i {
+                                max-width: 100%;
+                                filter: invert(1);
+                                opacity: 0.5;
+                                transition: 0.3s;
+                            }
+                        }
+                        span:nth-child(2) {
+                            color: #fff;
+                            margin-left: 10px;
+                            font-weight: 300;
+                            opacity: 0.5;
+                            transition: 0.3s;
+                        }
+                        &:hover span:nth-child(1) i,
+                        &:hover span:nth-child(2) {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .sci {
+                position: relative;
+                display: flex;
+                li {
+                    list-style: none;
+                    margin-right: 15px;
+                    font-size: 30px;
+                    a {
+                        text-decoration: none;
+                        i {
+                            color: #fff;
+                            opacity: 0.5;
+                            transition: 0.5s;
+                        }
+                    }
+                    &:hover a i {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        #kontaktForma {
+            position: absolute;
+            padding: 4em 3em; //sita pakeist i padding: 4em 3em; kai dideja rezoliucija
+            background: #fff;
+            // left: -4.3em; //sita pakeist i -200px kai dideja rezoliucija
+            // margin-left: 2.5vw;
+            margin-top: 180px; //sita istrint kai dideja rezoliucija
+            // padding-left: 12vw; //sita pajungt kai rezoliucija dideja
+            // width: calc(100% - 250px); //sita pajungti kai dideja rezoliucija
+            height: 100%; //sita pakeist i 92% kai rezoliucija dideja
+            width: 100%; //sita ISJUNGT kai dideja rezoliucija
+            box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+            margin: 0;
+            padding: 0;
+            h2 {
+                margin-top: 3.5em;
+                color: rgb(91, 75, 112);
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .formBox {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: column; //sita pakeist i row kai dideja rezoliucija!
+                padding-top: 30px;
+                padding: 0 2em;
+                .inputBox {
+                    position: relative;
+                    margin: 0 0 35px 0;
+                    &.w50,
+                    &.w100 {
+                        width: 100%;
+                    }
+                    input,
+                    textarea {
+                        resize: none;
+                        width: 100% !important;
+                        padding: 5px 0;
+                        font-size: 18px;
+                        font-weight: 300;
+                        color: #333;
+                        border: none;
+                        border-bottom: 1px solid #777;
+                        outline: none;
+                    }
+                    input:focus~span.spenas,
+                    input.tekstasYra~span.spenas,
+                    textarea:focus~span.spenas, // input:valid~span.spenas,
+                    textarea.tekstasYra~span.spenas {
+                        transform: translateY(-20px);
+                        font-size: 12px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        color: rgb(171, 34, 86);
+                    }
+                    textarea {
+                        min-height: 120px;
+                        // min-width: 39.5vw;
+                    }
+                    span.spenas {
+                        position: absolute;
+                        left: 0;
+                        padding: 5px 0;
+                        font-size: 18px;
+                        font-weight: 300;
+                        color: #333;
+                        transition: 0.5s;
+                        pointer-events: none;
+                    }
+                    // input[type="submit"] {
+                    button {
+                        all: unset;
+                        span {
+                            all: unset;
+                            position: relative;
+                            cursor: pointer;
+                            background: rgb(91, 75, 112);
+                            color: #fff;
+                            border: none;
+                            max-width: 150px;
+                            padding: 12px 50px;
+                            transition: 0.5s;
+                            &:hover {
+                                background: rgb(171, 34, 86);
+                                border-radius: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: rgb(104, 78, 120);
+    height: 3em;
+    display: flex;
+    align-items: center;
+    .footeris {
+        // border: solid;
+        margin-left: 15%;
+        font-weight: 300;
+        font-size: 0.95em;
+        color: rgba(255, 255, 255, 0.5)
+    }
+}
+
+@media only screen and (min-width: 692px) {
+    .skill {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// @media only screen and (max-width: 691px) {
+//     .skill {
+//         grid-template-columns: 1fr;
+//     }
+// }
+@media only screen and (max-width: 600px) {
+    section {
+        &#infoMano {
+            margin-top: 3em;
+            margin-bottom: 0em;
+        }
+    }
+    section#manoSkill {
+        .laukas {
+            margin: 0;
+        }
+    }
+    .aboutMe {
+        .grupe {
+            h3 {
+                font-size: 1.1em;
+                line-height: 1.3em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 858px) {
+    nav {
+        all: unset;
+        font-family: 'Roboto', sans-serif;
+        background: rgba(64, 94, 130, 0.4);
+        height: 3.5rem;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        overflow: hidden;
+        top: 0;
+        .logo {
+            all: unset;
+            display: relative;
+            font-size: 2.3em;
+            line-height: 3.5rem;
+            margin-left: 12.5vw;
+            a {
+                transition: 0.5s;
+                color: rgba(119, 68, 111, 0.5);
+            }
+        }
+        .logo:hover a {
+            color: rgba(255, 255, 255, 0.2);
+        }
+        ul {
+            all: unset;
+            float: right;
+            margin-top: 0;
+            margin-right: 2em;
+            left: 0%;
+            background: none;
+            li {
+                display: inline-block;
+                line-height: 3.5em;
+                /*turi but same*/
+                margin: 0 0.2em;
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 1.1em;
+                    padding: 0.4em 0.7em;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+                i:first-of-type {
+                    margin-left: 4em;
+                }
+                i {
+                    margin-right: 0em;
+                    color: rgba(255, 255, 255, 0.5);
+                    padding: 0.1em 0.1em;
+                    font-size: 1.5em;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                i:hover {
+                    color: rgba(26, 146, 173, 1);
+                }
+                a.active,
+                a:hover {
+                    background: rgba(40, 124, 150, 0.8);
+                    color: white;
+                }
+            }
+        }
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 3.5rem;
+            /*turi but same*/
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+    }
+    .aboutMe {
+        padding: 0 4em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section#myProjects {
+        .container {
+            padding-bottom: 0;
+            display: grid;
+            grid-template-columns: 50% auto;
+            .left {
+                text-align: start;
+                .inline {
+                    float: left;
+                }
+                .inner {
+                    h1 {
+                        margin: 0;
+                    }
+                }
+                &.pirmas {
+                    margin-left: 3em;
+                }
+            }
+            .right.antras {
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .pirmasPsl {
+        .tekstai {
+            .efektui {
+                position: relative;
+                height: 7em;
+                width: 90%;
+                h1 {
+                    position: absolute;
+                    height: 100%;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.1);
+                    font-weight: 900;
+                    font-size: 6.5em;
+                    -webkit-text-stroke: 0.02vw rgba(255, 255, 255, 0.4);
+                    display: block;
+                    margin-left: 5%;
+                }
+                h1::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0;
+                    color: rgba(255, 255, 255, 0.7);
+                    -webkit-text-stroke: 0vw rgba(255, 255, 255, 0.4);
+                    border-right: 2px solid rgba(255, 255, 255, 0.4);
+                    overflow: hidden;
+                    animation: animate 4s linear infinite;
+                    display: block;
+                    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+                    @keyframes animate {
+                        30% {
+                            width: 0;
+                        }
+                        70%,
+                        90% {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            h2 {
+                position: relative;
+                color: rgba(255, 255, 255, 0.6);
+                font-weight: 400;
+                font-size: 2.5em;
+                margin: 0;
+                margin-left: 10%;
+                display: block;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                width: 40%;
+                text-align: left;
+            }
+            h3 {
+                position: relative;
+                padding: 0;
+                margin-top: 3%;
+                margin-left: 5%;
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 300;
+                font-size: 1.1em;
+                display: block;
+                width: 40%;
+                letter-spacing: 0.05vw;
+                text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+                text-align: left;
+            }
+            .wrapper {
+                // display: unset;
+                width: 40%;
+                margin-left: 5%;
+                text-align: left;
+                padding-left: 8em;
+                .mygtukas {
+                    display: inline-block;
+                    height: 2.8rem;
+                    width: 2.8rem;
+                    /* float: left; */
+                    margin: 0 5px;
+                    overflow: hidden;
+                    background: rgba(255, 255, 255, 0.6);
+                    border-radius: 50px;
+                    cursor: pointer;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s ease-out;
+                    &:hover {
+                        width: 9rem;
+                    }
+                    &:hover .icon {
+                        background: rgba(255, 255, 255, 0.8);
+                    }
+                    .icon {
+                        display: inline-block;
+                        height: 2.8rem;
+                        width: 2.8rem;
+                        text-align: center;
+                        border-radius: 50px;
+                        box-sizing: border-box;
+                        line-height: 2.8rem;
+                        transition: all 0.3s ease-out;
+                        i {
+                            /* transform: scale(1.6); */
+                            font-size: 2rem;
+                            line-height: 2.8rem;
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+                    span {
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                        position: relative;
+                        top: -9%;
+                        margin-left: 0.2rem;
+                        transition: all 0.3s ease-out;
+                    }
+                    &:nth-child(1) span {
+                        color: #2867B2;
+                    }
+                    &:nth-child(1) i {
+                        color: rgb(41, 99, 130);
+                    }
+                    &:nth-child(1):hover i {
+                        color: #2867B2;
+                    }
+                    &:nth-child(2) i {
+                        color: rgb(173, 92, 81);
+                    }
+                    &:nth-child(2):hover i {
+                        color: #211F1F;
+                    }
+                }
+            }
+            .iliustracija {
+                display: unset;
+                position: absolute;
+                width: 50vw;
+                left: 45%;
+                top: 22%;
+            }
+        }
+    }
+    #infoMano {
+        padding: 3em 0;
+        position: relative;
+        .fonas {
+            display: flex;
+            position: absolute;
+            opacity: 0.4;
+            width: 100%;
+            top: 18%;
+            transform: scaleY(1.3);
+        }
+        .aboutMe {
+            display: flex;
+            .grupe1 {
+                position: relative;
+                float: left;
+                width: 50%;
+                margin-top: 2em;
+                .blondie {
+                    align-content: center;
+                }
+            }
+            .grupe {
+                float: right;
+                position: relative;
+                width: 50%;
+                padding: 0 2em;
+                h2 {
+                    font-size: 2.8em;
+                    color: rgba(114, 72, 116, 0.8);
+                    transition: 0.3s;
+                    &:hover {
+                        color: rgba(31, 126, 153, 0.5);
+                    }
+                }
+                h3 {
+                    font-size: 1em;
+                }
+                button {
+                    border: none;
+                    margin: 0;
+                    font-size: 1em;
+                    font-weight: bold;
+                    height: 2.4em;
+                    width: 6.5em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    section.contactMe {
+        margin-top: 0em; //sita pakeist i 5em kai dideja rezoliucija
+        // background: rgba(255, 255, 255, 0.5); //ijungt kai rezoliucija dideja
+        // &::before {
+        //     background: rgba(127, 55, 101, 0.6); //ijungt kai rezoliucija dideja
+        // }
+        .container {
+            min-width: 55vw; //sita pakeist i 55vw kai rezoliucija dideja
+            min-height: 550px; //sita pakeist i 550px kai rezoliucija dideja
+            justify-content: flex-start; //sita istrint kai rezoliucija dideja
+            // left: 50%;
+            .kontaktInfo {
+                top: 40px; //sita pakeist i 40px kai dideja
+                left: -200px; //sita pakeist i -200px kai rezoliucija dideja
+                width: 16vw; //sita pakeist i 16vw kai rezoliucija dideja
+                height: calc(100% - 80px); //sita pajungt kai rezoliucija dideja
+                padding: 40px; //sita pajungt kai rezoliucija dideja!
+                .kitasStulpelis {
+                    padding: 0; //sita istrint kai rezoliucija dideja
+                    padding-left: 1em;
+                    .info {
+                        flex-direction: row; //sita istrint kai rezoliucija dideja
+                        flex-wrap: wrap;
+                        li {
+                            i.fa-map-marker-alt {
+                                margin-left: 0.1em;
+                            }
+                        }
+                    }
+                }
+            }
+            #kontaktForma {
+                padding: 4em 1em; //sita pakeist i padding: 4em 3em; kai dideja rezoliucija
+                left: 0; //sita pakeist i -200px kai dideja rezoliucija
+                margin-top: 0; //sita istrint kai dideja rezoliucija
+                padding-left: 8vw; //sita pajungt kai rezoliucija dideja
+                // padding-left: 12vw; //sita pajungt kai rezoliucija dideja
+                width: calc(100% - 50px); //sita pajungti kai dideja rezoliucija
+                height: 92%; //sita pakeist i 92% kai rezoliucija dideja
+                box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+                h2 {
+                    margin-top: 0em;
+                    margin-bottom: 2em;
+                    color: rgb(91, 75, 112);
+                    text-align: left;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding-left: 1.3em;
+                }
+                .formBox {
+                    flex-direction: column; //sita pakeist i row kai dideja rezoliucija!
+                }
+            }
+        }
+    }
+    #infoMano {
+        .fonas {
+            top: 12%;
+            transform: scaleY(1.1);
+        }
+    }
+    @media only screen and (min-width: 1213px) {
+        section#myProjects {
+            .container {
+                .left {
+                    .inner {
+                        h1 {
+                            font-size: 2.4em;
+                        }
+                    }
+                }
+                .right.pyrmas {
+                    margin-top: 0.3em;
+                }
+            }
+        }
+        section#izanga {
+            height: 70vh;
+            .pirmasPsl {
+                .tekstai {
+                    .iliustracija {
+                        top: 32%;
+                        left: 28%;
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+        #infoMano {
+            .fonas {
+                top: 7%;
+                transform: scaleY(1);
+            }
+            .aboutMe {
+                .grupe {
+                    h3 {
+                        font-size: 1.05em;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1300px) {
+        section#myProjects {
+            .container {
+                .right {
+                    .fotke.pirma {
+                        margin-top: -4%;
+                    }
+                    .fotke.antra {
+                        margin-bottom: -4%;
+                    }
+                }
+            }
+        }
+        section#izanga {
+            height: 75vh;
+        }
+        #infoMano {
+            .aboutMe {
+                .grupe {
+                    h3 {
+                        font-size: 1.1em;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1380px) {
+        section#izanga {
+            height: 80vh;
+        }
+        .pirmasPsl {
+            height: 100%;
+            padding-bottom: 0em;
+            .tekstai {
+                height: 100%;
+                .efektui {
+                    height: 8.3em;
+                    h1 {
+                        font-size: 7.5em;
+                        height: 100%;
+                    }
+                }
+                h2 {
+                    font-size: 2.8em;
+                }
+                h3 {
+                    width: 32%;
+                    font-size: 1.1em;
+                }
+            }
+        }
+        #infoMano {
+            .fonas {
+                top: 0%;
+                transform: none;
+            }
+            .aboutMe {
+                .grupe1 {
+                    padding: 0;
+                    margin-top: 0;
+                    .blondie {
+                        padding-bottom: 2em;
+                        width: 25vw;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1500px) {
+        section#myProjects {
+            .container {
+                display: grid;
+                grid-template-columns: 50% auto;
+                .left {
+                    // border: solid;
+                    padding-left: 6em;
+                    padding-right: 2em;
+                    .inner {
+                        h1 {
+                            font-size: 3em;
+                        }
+                    }
+                    .inner.pasirinkti {
+                        margin-top: 2em;
+                        margin-bottom: 6em;
+                    }
+                }
+                .left.antras {
+                    padding-left: 2em;
+                    padding-right: 6em;
+                }
+            }
+        }
+        #infoMano {
+            .aboutMe {
+                .grupe1 {
+                    padding: 0;
+                }
+                .grupe {
+                    h3 {
+                        padding: 0 4em;
+                        margin: 0;
+                        margin-top: 0.5em;
+                    }
+                    h2 {
+                        font-size: 3.5em;
+                    }
+                }
+            }
+        }
+        section.contactMe {
+            .container {
+                left: 6em;
+                #kontaktForma {
+                    padding: 4em 3em; //sita pakeist i padding: 4em 3em; kai dideja rezoliucija
+                    left: 0; //sita pakeist i -200px kai dideja rezoliucija
+                    margin-top: 0; //sita istrint kai dideja rezoliucija
+                    padding-left: 12vw; //sita pajungt kai rezoliucija dideja
+                    // padding-left: 12vw; //sita pajungt kai rezoliucija dideja
+                    width: calc(100% - 400px); //sita pajungti kai dideja rezoliucija
+                    height: 92%; //sita pakeist i 92% kai rezoliucija dideja
+                    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1650px) {
+        section#myProjects {
+            .container {
+                display: grid;
+                grid-template-columns: 50% auto;
+                .left.pirmas {
+                    padding-left: 8em;
+                    padding-right: 2em;
+                }
+                .left.antras {
+                    padding-left: 2em;
+                    padding-right: 12em;
+                    .inner {
+                        padding-top: 2em;
+                    }
+                }
+                .right {
+                    .fotke.pirma {
+                        margin-right: 17%;
+                        // border: solid;
+                        margin-bottom: 2.5em;
+                    }
+                    .fotke.antra {
+                        margin-left: 17%;
+                    }
+                }
+            }
+        }
+        section#izanga {
+            .pirmasPsl {
+                .tekstai {
+                    margin-top: 2em;
+                    .efektui {
+                        height: 20%;
+                        h1 {
+                            font-size: 9em;
+                        }
+                    }
+                    h2 {
+                        font-size: 3.2em;
+                    }
+                    h3 {
+                        width: 32vw;
+                    }
+                    .iliustracija {
+                        width: 60vw;
+                        left: 37%;
+                    }
+                }
+            }
+        }
+        #infoMano {
+            .aboutMe {
+                .grupe1 {
+                    padding: 0;
+                }
+                .grupe {
+                    margin-top: 2em;
+                    h3 {
+                        padding: 0 4em;
+                        margin: 0;
+                        margin-top: 0.5em;
+                        font-size: 1.1vw;
+                    }
+                    h2 {
+                        font-size: 3.5em;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1880px) {
+        section#myProjects {
+            .container {
+                .left.pirmas {
+                    padding-right: 1em;
+                }
+                .left.antras {
+                    .inner {
+                        padding-top: 2em;
+                    }
+                }
+                .right {
+                    .fotke.pirma {
+                        margin-bottom: 4.5em;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 2800px) {
+        .pirmasPsl {
+            .tekstai {
+                h3 {
+                    font-size: 2em;
+                }
+            }
+        }
+        #infoMano {
+            .aboutMe {
+                .grupe {
+                    button {
+                        font-size: 1.7em;
+                    }
+                }
+            }
+        }
+        #manoSkill {
+            .laukas {
+                transform: scale(1.2);
+            }
+        }
+    }
+    @media only screen and (min-width: 3700px) {
+        section#izanga {
+            .pirmasPsl {
+                .tekstai {
+                    .efektui {
+                        h1 {
+                            font-size: 16em;
+                        }
+                    }
+                    h2 {
+                        font-size: 7em;
+                    }
+                    h3 {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+        #infoMano {
+            .aboutMe {
+                .grupe {
+                    h2 {
+                        margin-top: 1em;
+                        font-size: 7em;
+                    }
+                    button {
+                        margin-top: 1em;
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+        section#manoSkill {
+            margin-top: 20em;
+            .laukas {
+                transform: scale(1.3);
+            }
+        }
+        section#myProjects {
+            margin-top: 20em;
+            .container {
+                .left {
+                    font-size: 1.8em;
+                }
+                .left.antras {
+                    font-size: 1.8em;
+                }
+            }
+        }
+        section.contactMe {
+            padding: 0;
+            .container {
+                left: 28em;
+                margin: 0;
+                .kontaktInfo {
+                    width: 10vw; //sita pakeist i 16vw kai rezoliucija dideja
+                    font-size: 1.4em;
+                }
+                #kontaktForma {
+                    padding-left: 8vw; //sita pajungt kai rezoliucija dideja
+                    width: calc(100% - 1200px); //sita pajungti kai dideja rezoliucija
+                }
+            }
+        }
+    }
+}
