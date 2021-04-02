@@ -155,7 +155,7 @@ tl.from('.stagger', {
 
 gsap.from(".tranzicija", {
     scrollTrigger: {
-        trigger: '.tranzicija',
+        trigger: '.trigerinu',
         start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
     },
     y: 50,
@@ -175,8 +175,8 @@ gsap.from(".tranzicija2", {
 })
 gsap.from(".tranzicija3", {
     scrollTrigger: {
-        trigger: '.tranzicija3',
-        start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
+        trigger: '.trigerinam3',
+        start: "bottom bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
     },
     y: 50,
     opacity: 0,
@@ -195,11 +195,11 @@ gsap.from(".tranzicija4", {
 })
 gsap.from(".tranzicija5", {
     scrollTrigger: {
-        trigger: '.tranzicija5',
+        trigger: '.kontaktInfo',
         start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
     },
     y: 50,
     opacity: 0,
     duration: 1,
-    stagger: .2
+    stagger: .15
 })
