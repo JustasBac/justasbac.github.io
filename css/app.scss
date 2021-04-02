@@ -156,16 +156,18 @@ nav {
             margin: 50px 0;
             left: 0;
             height: 2.2em;
-            a {
+            a.linkai {
                 color: rgba(255, 255, 255, 0.8);
                 font-size: 1.6em;
                 text-decoration: none;
                 padding: .2em 1em;
             }
-            i {
-                color: rgba(255, 255, 255, 0.8);
-                font-size: 2em;
-                margin: 0 0.4em;
+            a.navIkonos {
+                i {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 2em;
+                    margin: 0 0.4em;
+                }
             }
         }
     }
@@ -756,32 +758,34 @@ footer {
                 line-height: 3.5em;
                 /*turi but same*/
                 margin: 0 0.2em;
-                a {
+                a.navIkonos {
+                    i.fa-linkedin {
+                        margin-left: 4em;
+                    }
+                    i {
+                        margin-right: 0em;
+                        color: rgba(255, 255, 255, 0.5);
+                        padding: 0.1em 0.1em;
+                        font-size: 1.5em;
+                        transition: 0.5s;
+                        cursor: pointer;
+                    }
+                    i:hover {
+                        color: rgba(26, 146, 173, 1);
+                    }
+                }
+                a.linkai {
                     color: rgba(255, 255, 255, 0.8);
                     font-size: 1.1em;
                     padding: 0.4em 0.7em;
                     border-radius: 3px;
                     text-decoration: none;
                     transition: 0.5s;
-                }
-                i:first-of-type {
-                    margin-left: 4em;
-                }
-                i {
-                    margin-right: 0em;
-                    color: rgba(255, 255, 255, 0.5);
-                    padding: 0.1em 0.1em;
-                    font-size: 1.5em;
-                    transition: 0.5s;
-                    cursor: pointer;
-                }
-                i:hover {
-                    color: rgba(26, 146, 173, 1);
-                }
-                a.active,
-                a:hover {
-                    background: rgba(40, 124, 150, 0.8);
-                    color: white;
+                    &.active,
+                    &:hover {
+                        background: rgba(40, 124, 150, 0.8);
+                        color: white;
+                    }
                 }
             }
         }
