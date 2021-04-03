@@ -142,7 +142,8 @@ tl.from('.tekstai', {
     y: '-30%',
     opacity: 0,
     duration: 2,
-    ease: Expo.easeOut
+    ease: Expo.easeOut,
+    delay: 1.5
 });
 
 tl.from('.stagger', {
@@ -203,3 +204,8 @@ gsap.from(".tranzicija5", {
     duration: 1,
     stagger: .15
 })
+
+
+setTimeout(function() {
+    $('.loader_bg').fadeToggle();
+}, 1500);
