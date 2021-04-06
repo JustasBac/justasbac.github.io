@@ -1,6 +1,8 @@
+const check = document.getElementById("check");
+const checkbtn = document.querySelector(".checkbtn");
+const mygtukas = document.querySelector(".checkbtn i");
+
 function paspaude() {
-    const checkbtn = document.querySelector(".checkbtn");
-    const mygtukas = document.querySelector(".checkbtn i");
     if (mygtukas.classList.contains("fa-bars")) {
         mygtukas.classList.remove("fa-bars");
         mygtukas.classList.add("fa-times");
@@ -11,6 +13,15 @@ function paspaude() {
         checkbtn.style.background = "none"
     }
 }
+
+function paspausta() {
+    if (mygtukas.classList.contains("fa-times")) {
+        mygtukas.classList.remove("fa-times");
+        mygtukas.classList.add("fa-bars");
+        checkbtn.style.background = "none"
+        check.checked = false;
+    }
+};
 
 //validation zinutes siuntimo formos:
 const form = document.getElementById('formike');
@@ -26,10 +37,22 @@ const text3 = document.getElementById("textukas[3]");
 const ikonele = document.querySelector(".iconaEmailui");
 const ikoneleDenied = document.querySelector(".iconaEmailuiDenied");
 
-window.onload = tekstasIVirsu; //paleidziu fun
+window.onload = tekstaIstrinu; //paleidziu
+
+function tekstaIstrinu() {
+    vardas.value = "";
+    vardas.classList.remove("tekstasYra");
+    pavarde.value = "";
+    pavarde.classList.remove("tekstasYra");
+    email.value = "";
+    email.classList.remove("tekstasYra");
+    zinute.value = "";
+    zinute.classList.remove("tekstasYra");
+}
+
+
 
 function tekstasIVirsu() {
-
     if (vardas.value.length > 0) {
         text.innerHTML = "";
         vardas.style.borderColor = "#777";
@@ -41,12 +64,14 @@ function tekstasIVirsu() {
     if (pavarde.value.length > 0) {
         text1.innerHTML = "";
         pavarde.style.borderColor = "#777";
+        pavarde.innerHTML = "";
         pavarde.classList.add("tekstasYra");
     } else {
         pavarde.classList.remove("tekstasYra");
     }
     if (email.value.length > 0) {
         email.classList.add("tekstasYra");
+        email.innerHTML = "";
         email.style.borderColor = "#777";
     } else {
         email.classList.remove("tekstasYra");
@@ -54,11 +79,11 @@ function tekstasIVirsu() {
     if (zinute.value.length > 0) {
         text3.innerHTML = "";
         zinute.classList.add("tekstasYra");
+        zinute.innerHTML = "";
         zinute.style.borderColor = "#777";
     } else {
         zinute.classList.remove("tekstasYra");
     }
-
 }
 
 email.addEventListener('keyup', function() {
@@ -82,7 +107,6 @@ email.addEventListener('keyup', function() {
         ikoneleDenied.style.color = "red";
         ikoneleDenied.style.fontSize = "1.5em";
     }
-    console.log(email.value.length)
     if (email.value.length < 1) {
         form.classList.remove("valid");
         form.classList.remove("invalid");

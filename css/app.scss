@@ -11,8 +11,8 @@
         width: 150px;
         height: 150px;
         position: absolute;
-        top: calc(50vh - 75px);
-        left: calc(50vw - 75px);
+        top: calc(50vh - 115px);
+        left: calc(50vw - 95px);
         &:before,
         &:after {
             content: '';
@@ -190,7 +190,7 @@ nav {
     }
     ul {
         position: fixed;
-        width: 50%;
+        width: 100%;
         height: 100vh;
         background: rgb(127, 55, 101);
         top: 2.5em;
