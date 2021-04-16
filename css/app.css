@@ -1002,6 +1002,9 @@ footer .footeris {
   section#myProjects .container .left.pirmas {
     margin-left: 3em;
   }
+  section#myProjects .container .left.third {
+    margin-left: 3em;
+  }
   section#myProjects .container .right.pyrmas .details {
     visibility: visible;
   }
@@ -1012,6 +1015,9 @@ footer .footeris {
     grid-row: 2;
   }
   section#myProjects .container .right.antras .details {
+    visibility: visible;
+  }
+  section#myProjects .container .right.third .details {
     visibility: visible;
   }
 }
@@ -1301,6 +1307,9 @@ footer .footeris {
   section#myProjects .container .right.pyrmas {
     margin-top: 0.3em;
   }
+  section#myProjects .container .right.third {
+    margin-bottom: 0.3em;
+  }
   section#izanga {
     height: 70vh;
   }
@@ -1325,6 +1334,9 @@ footer .footeris {
     margin-top: -4%;
   }
   section#myProjects .container .right .fotke.antra {
+    margin-bottom: -4%;
+  }
+  section#myProjects .container .right .fotke.third {
     margin-bottom: -4%;
   }
   section#izanga {
@@ -1399,6 +1411,9 @@ footer .footeris {
     padding-left: 2em;
     padding-right: 6em;
   }
+  section#myProjects .container .right.antras {
+    margin-bottom: 4em;
+  }
   #infoMano .aboutMe .grupe1 {
     padding: 0;
   }
@@ -1443,12 +1458,19 @@ footer .footeris {
   section#myProjects .container .left.antras .inner {
     padding-top: 2em;
   }
+  section#myProjects .container .left.third {
+    padding-left: 8em;
+    padding-right: 2em;
+  }
   section#myProjects .container .right .fotke.pirma {
     margin-right: 17%;
     margin-bottom: 2.5em;
   }
   section#myProjects .container .right .fotke.antra {
     margin-left: 17%;
+  }
+  section#myProjects .container .right .fotke.third {
+    margin-right: 17%;
   }
   section#izanga .pirmasPsl .tekstai {
     margin-top: 2em;
@@ -1493,8 +1515,14 @@ footer .footeris {
   section#myProjects .container .left.antras .inner {
     padding-top: 2em;
   }
+  section#myProjects .container .left.third {
+    margin-top: 3.5em;
+  }
   section#myProjects .container .right .fotke.pirma {
     margin-bottom: 4.5em;
+  }
+  section#myProjects .container .right .fotke.third {
+    margin-top: 2.5em;
   }
 }
 
