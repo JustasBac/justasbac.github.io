@@ -49,7 +49,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(131deg, rgba(186, 186, 186, 0.01) 0%, rgba(186, 186, 186, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 16.667%, rgba(192, 192, 192, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 33.334%, rgba(48, 48, 48, 0.01) 50.001000000000005%, rgba(33, 33, 33, 0.01) 50.001%, rgba(33, 33, 33, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 66.668%, rgba(182, 182, 182, 0.01) 83.33500000000001%, rgba(211, 211, 211, 0.01) 83.335%, rgba(211, 211, 211, 0.01) 100.002%), linear-gradient(148deg, rgba(48, 48, 48, 0.01) 0%, rgba(48, 48, 48, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 16.667%, rgba(178, 178, 178, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 33.334%, rgba(192, 192, 192, 0.01) 50.001000000000005%, rgba(237, 237, 237, 0.01) 50.001%, rgba(237, 237, 237, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 66.668%, rgba(194, 194, 194, 0.01) 83.33500000000001%, rgba(227, 227, 227, 0.01) 83.335%, rgba(227, 227, 227, 0.01) 100.002%), linear-gradient(138deg, rgba(146, 146, 146, 0.03) 0%, rgba(146, 146, 146, 0.03) 25%, rgba(33, 33, 33, 0.03) 25%, rgba(33, 33, 33, 0.03) 50%, rgba(46, 46, 46, 0.03) 50%, rgba(46, 46, 46, 0.03) 75%, rgba(172, 172, 172, 0.03) 75%, rgba(172, 172, 172, 0.03) 100%), linear-gradient(38deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 16.667%, rgba(28, 28, 28, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 33.334%, rgba(236, 236, 236, 0.03) 50.001000000000005%, rgba(3, 3, 3, 0.03) 50.001%, rgba(3, 3, 3, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 66.668%, rgba(207, 207, 207, 0.03) 83.33500000000001%, rgba(183, 183, 183, 0.03) 83.335%, rgba(183, 183, 183, 0.03) 100.002%), linear-gradient(145deg, rgba(20, 20, 20, 0.02) 0%, rgba(20, 20, 20, 0.02) 20%, rgba(4, 4, 4, 0.02) 20%, rgba(4, 4, 4, 0.02) 40%, rgba(194, 194, 194, 0.02) 40%, rgba(194, 194, 194, 0.02) 60%, rgba(34, 34, 34, 0.02) 60%, rgba(34, 34, 34, 0.02) 80%, rgba(71, 71, 71, 0.02) 80%, rgba(71, 71, 71, 0.02) 100%), linear-gradient(78deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%, rgba(95, 95, 95, 0.02) 20%, rgba(95, 95, 95, 0.02) 40%, rgba(71, 71, 71, 0.02) 40%, rgba(71, 71, 71, 0.02) 60%, rgba(7, 7, 7, 0.02) 60%, rgba(7, 7, 7, 0.02) 80%, rgba(130, 130, 130, 0.02) 80%, rgba(130, 130, 130, 0.02) 100%), linear-gradient(293deg, rgba(213, 213, 213, 0.03) 0%, rgba(213, 213, 213, 0.03) 20%, rgba(220, 220, 220, 0.03) 20%, rgba(220, 220, 220, 0.03) 40%, rgba(146, 146, 146, 0.03) 40%, rgba(146, 146, 146, 0.03) 60%, rgba(57, 57, 57, 0.03) 60%, rgba(57, 57, 57, 0.03) 80%, rgba(120, 120, 120, 0.03) 80%, rgba(120, 120, 120, 0.03) 100%), linear-gradient(90deg, rgb(0, 145, 173), rgb(183, 9, 76));
-    height: 100vh;
+    height: 115vh;
 }
 
 html {
@@ -891,6 +891,7 @@ footer {
 
 @media only screen and (min-width: 1050px) {
     .pirmasPsl {
+        height: 100vh;
         .tekstai {
             .efektui {
                 position: relative;
@@ -939,7 +940,6 @@ footer {
                 font-size: 2.5em;
                 margin: 0;
                 margin-left: 10%;
-                display: block;
                 letter-spacing: 0.01em;
                 text-transform: uppercase;
                 width: 40%;
@@ -947,17 +947,15 @@ footer {
             }
             h3 {
                 position: relative;
-                padding: 0;
                 margin-top: 3%;
-                margin-left: 5%;
                 color: rgba(255, 255, 255, 0.8);
                 font-weight: 300;
                 font-size: 1.1em;
-                display: block;
-                width: 40%;
+                width: 80%;
                 letter-spacing: 0.05vw;
                 text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-                text-align: left;
+                text-align: start;
+                padding: 0 2em;
             }
             .wrapper {
                 // display: unset;
@@ -1027,9 +1025,9 @@ footer {
             .iliustracija {
                 display: unset;
                 position: absolute;
-                width: 50vw;
-                left: 45%;
-                top: 22%;
+                width: 80vw;
+                left: 15%;
+                top: 25em;
             }
         }
     }
@@ -1138,7 +1136,7 @@ footer {
     #infoMano {
         .fonas {
             top: 12%;
-            transform: scaleY(1.1);
+            transform: scaleY(1.05);
         }
     }
     @media only screen and (min-width: 1213px) {
@@ -1160,21 +1158,11 @@ footer {
             }
         }
         section#izanga {
-            height: 70vh;
-            .pirmasPsl {
-                .tekstai {
-                    .iliustracija {
-                        top: 32%;
-                        left: 28%;
-                        width: 70vw;
-                    }
-                }
-            }
+            height: 100vh;
         }
         #infoMano {
             .fonas {
                 top: 7%;
-                transform: scaleY(1);
             }
             .aboutMe {
                 .grupe {
@@ -1202,9 +1190,6 @@ footer {
                 }
             }
         }
-        section#izanga {
-            height: 75vh;
-        }
         #infoMano {
             .aboutMe {
                 .grupe {
@@ -1218,13 +1203,16 @@ footer {
     }
     @media only screen and (min-width: 1380px) {
         section#izanga {
-            height: 80vh;
+            height: 100vh;
         }
         .pirmasPsl {
             height: 100%;
             padding-bottom: 0em;
             .tekstai {
                 height: 100%;
+                .iliustracija {
+                    top: 30%;
+                }
                 .efektui {
                     height: 8.3em;
                     h1 {
@@ -1260,6 +1248,18 @@ footer {
         }
     }
     @media only screen and (min-width: 1500px) {
+        .pirmasPsl {
+            .tekstai {
+                .iliustracija {
+                    top: 30%;
+                }
+                h3 {
+                    width: 32%;
+                    font-size: 1.1em;
+                    left: 3%;
+                }
+            }
+        }
         section#myProjects {
             .container {
                 display: grid;
