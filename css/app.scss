@@ -859,15 +859,16 @@ footer {
                         margin: 0;
                     }
                 }
-                &.pirmas {
-                    margin-left: 3em;
-                }
-                &.third {
+                &.pirmas,
+                &.third,
+                &.fifth {
                     margin-left: 3em;
                 }
             }
             .right {
-                &.pyrmas {
+                &.pyrmas,
+                &.third,
+                &.fifth {
                     .details {
                         visibility: visible;
                     }
@@ -879,7 +880,9 @@ footer {
                         visibility: visible;
                     }
                 }
-                &.third {
+                &.ketvirtas {
+                    grid-column: 1;
+                    grid-row: 4;
                     .details {
                         visibility: visible;
                     }
@@ -1152,7 +1155,7 @@ footer {
                 .right.pyrmas {
                     margin-top: 0.3em;
                 }
-                .right.third {
+                .right.fifth {
                     margin-bottom: 0.3em;
                 }
             }
@@ -1181,10 +1184,7 @@ footer {
                     .fotke.pirma {
                         margin-top: -4%;
                     }
-                    .fotke.antra {
-                        margin-bottom: -4%;
-                    }
-                    .fotke.third {
+                    .fotke.fifth {
                         margin-bottom: -4%;
                     }
                 }
@@ -1278,7 +1278,8 @@ footer {
                         margin-bottom: 6em;
                     }
                 }
-                .left.antras {
+                .left.antras,
+                .left.ketvirtas {
                     padding-left: 2em;
                     padding-right: 6em;
                 }
@@ -1325,31 +1326,32 @@ footer {
             .container {
                 display: grid;
                 grid-template-columns: 50% auto;
-                .left.pirmas {
+                .left.pirmas,
+                .left.third,
+                .left.fifth {
                     padding-left: 8em;
                     padding-right: 2em;
                 }
-                .left.antras {
+                .left.antras,
+                .left.ketvirtas {
                     padding-left: 2em;
                     padding-right: 12em;
                     .inner {
                         padding-top: 2em;
                     }
                 }
-                .left.third {
-                    padding-left: 8em;
-                    padding-right: 2em;
-                }
                 .right {
-                    .fotke.pirma {
+                    .fotke.pirma,
+                    .fotke.third {
                         margin-right: 17%;
                         // border: solid;
                         margin-bottom: 2.5em;
                     }
-                    .fotke.antra {
+                    .fotke.antra,
+                    .fotke.ketvirta {
                         margin-left: 17%;
                     }
-                    .fotke.third {
+                    .fotke.fifth {
                         margin-right: 17%;
                     }
                 }
@@ -1401,23 +1403,30 @@ footer {
     @media only screen and (min-width: 1880px) {
         section#myProjects {
             .container {
-                .left.pirmas {
+                .left.pirmas,
+                .left.third {
                     padding-right: 1em;
                 }
-                .left.antras {
+                .left.antras,
+                .left.third,
+                .left.ketvirtas {
                     .inner {
                         padding-top: 2em;
                     }
                 }
-                .left.third {
+                .left.fifth {
                     margin-top: 3.5em;
                 }
                 .right {
                     .fotke.pirma {
                         margin-bottom: 4.5em;
                     }
-                    .fotke.third {
+                    .fotke.third,
+                    .fotke.ketvirta {
                         margin-top: 2.5em;
+                    }
+                    .fotke.fifth {
+                        margin-top: 5.5em;
                     }
                 }
             }
@@ -1488,9 +1497,6 @@ footer {
             margin-top: 20em;
             .container {
                 .left {
-                    font-size: 1.8em;
-                }
-                .left.antras {
                     font-size: 1.8em;
                 }
             }

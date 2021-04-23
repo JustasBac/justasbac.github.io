@@ -999,13 +999,10 @@ footer .footeris {
   section#myProjects .container .left .inner h1 {
     margin: 0;
   }
-  section#myProjects .container .left.pirmas {
+  section#myProjects .container .left.pirmas, section#myProjects .container .left.third, section#myProjects .container .left.fifth {
     margin-left: 3em;
   }
-  section#myProjects .container .left.third {
-    margin-left: 3em;
-  }
-  section#myProjects .container .right.pyrmas .details {
+  section#myProjects .container .right.pyrmas .details, section#myProjects .container .right.third .details, section#myProjects .container .right.fifth .details {
     visibility: visible;
   }
   section#myProjects .container .right.antras {
@@ -1017,7 +1014,13 @@ footer .footeris {
   section#myProjects .container .right.antras .details {
     visibility: visible;
   }
-  section#myProjects .container .right.third .details {
+  section#myProjects .container .right.ketvirtas {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  section#myProjects .container .right.ketvirtas .details {
     visibility: visible;
   }
 }
@@ -1307,7 +1310,7 @@ footer .footeris {
   section#myProjects .container .right.pyrmas {
     margin-top: 0.3em;
   }
-  section#myProjects .container .right.third {
+  section#myProjects .container .right.fifth {
     margin-bottom: 0.3em;
   }
   section#izanga {
@@ -1326,10 +1329,7 @@ footer .footeris {
   section#myProjects .container .right .fotke.pirma {
     margin-top: -4%;
   }
-  section#myProjects .container .right .fotke.antra {
-    margin-bottom: -4%;
-  }
-  section#myProjects .container .right .fotke.third {
+  section#myProjects .container .right .fotke.fifth {
     margin-bottom: -4%;
   }
   #infoMano .aboutMe .grupe h3 {
@@ -1408,7 +1408,8 @@ footer .footeris {
     margin-top: 2em;
     margin-bottom: 6em;
   }
-  section#myProjects .container .left.antras {
+  section#myProjects .container .left.antras,
+  section#myProjects .container .left.ketvirtas {
     padding-left: 2em;
     padding-right: 6em;
   }
@@ -1448,29 +1449,31 @@ footer .footeris {
     -ms-grid-columns: 50% auto;
         grid-template-columns: 50% auto;
   }
-  section#myProjects .container .left.pirmas {
+  section#myProjects .container .left.pirmas,
+  section#myProjects .container .left.third,
+  section#myProjects .container .left.fifth {
     padding-left: 8em;
     padding-right: 2em;
   }
-  section#myProjects .container .left.antras {
+  section#myProjects .container .left.antras,
+  section#myProjects .container .left.ketvirtas {
     padding-left: 2em;
     padding-right: 12em;
   }
-  section#myProjects .container .left.antras .inner {
+  section#myProjects .container .left.antras .inner,
+  section#myProjects .container .left.ketvirtas .inner {
     padding-top: 2em;
   }
-  section#myProjects .container .left.third {
-    padding-left: 8em;
-    padding-right: 2em;
-  }
-  section#myProjects .container .right .fotke.pirma {
+  section#myProjects .container .right .fotke.pirma,
+  section#myProjects .container .right .fotke.third {
     margin-right: 17%;
     margin-bottom: 2.5em;
   }
-  section#myProjects .container .right .fotke.antra {
+  section#myProjects .container .right .fotke.antra,
+  section#myProjects .container .right .fotke.ketvirta {
     margin-left: 17%;
   }
-  section#myProjects .container .right .fotke.third {
+  section#myProjects .container .right .fotke.fifth {
     margin-right: 17%;
   }
   section#izanga .pirmasPsl .tekstai {
@@ -1510,20 +1513,27 @@ footer .footeris {
 }
 
 @media only screen and (min-width: 1140px) and (min-width: 1880px) {
-  section#myProjects .container .left.pirmas {
+  section#myProjects .container .left.pirmas,
+  section#myProjects .container .left.third {
     padding-right: 1em;
   }
-  section#myProjects .container .left.antras .inner {
+  section#myProjects .container .left.antras .inner,
+  section#myProjects .container .left.third .inner,
+  section#myProjects .container .left.ketvirtas .inner {
     padding-top: 2em;
   }
-  section#myProjects .container .left.third {
+  section#myProjects .container .left.fifth {
     margin-top: 3.5em;
   }
   section#myProjects .container .right .fotke.pirma {
     margin-bottom: 4.5em;
   }
-  section#myProjects .container .right .fotke.third {
+  section#myProjects .container .right .fotke.third,
+  section#myProjects .container .right .fotke.ketvirta {
     margin-top: 2.5em;
+  }
+  section#myProjects .container .right .fotke.fifth {
+    margin-top: 5.5em;
   }
 }
 
@@ -1569,9 +1579,6 @@ footer .footeris {
     margin-top: 20em;
   }
   section#myProjects .container .left {
-    font-size: 1.8em;
-  }
-  section#myProjects .container .left.antras {
     font-size: 1.8em;
   }
   section.contactMe {
