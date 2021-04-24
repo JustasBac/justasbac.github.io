@@ -1406,15 +1406,19 @@ footer .footeris {
   }
   section#myProjects .container .left .inner.pasirinkti {
     margin-top: 2em;
-    margin-bottom: 6em;
   }
   section#myProjects .container .left.antras,
   section#myProjects .container .left.ketvirtas {
     padding-left: 2em;
     padding-right: 6em;
   }
-  section#myProjects .container .right.antras {
+  section#myProjects .container .right.pyrmas,
+  section#myProjects .container .right.antras,
+  section#myProjects .container .right.third {
     margin-bottom: 4em;
+  }
+  section#myProjects .container .right.ketvirtas {
+    margin-bottom: 1.5em;
   }
   #infoMano .aboutMe .grupe1 {
     padding: 0;
@@ -1464,10 +1468,12 @@ footer .footeris {
   section#myProjects .container .left.ketvirtas .inner {
     padding-top: 2em;
   }
+  section#myProjects .container .right.ketvirtas {
+    margin-bottom: 3em;
+  }
   section#myProjects .container .right .fotke.pirma,
   section#myProjects .container .right .fotke.third {
     margin-right: 17%;
-    margin-bottom: 2.5em;
   }
   section#myProjects .container .right .fotke.antra,
   section#myProjects .container .right .fotke.ketvirta {
@@ -1520,20 +1526,10 @@ footer .footeris {
   section#myProjects .container .left.antras .inner,
   section#myProjects .container .left.third .inner,
   section#myProjects .container .left.ketvirtas .inner {
-    padding-top: 2em;
+    margin-top: 3em;
   }
   section#myProjects .container .left.fifth {
-    margin-top: 3.5em;
-  }
-  section#myProjects .container .right .fotke.pirma {
-    margin-bottom: 4.5em;
-  }
-  section#myProjects .container .right .fotke.third,
-  section#myProjects .container .right .fotke.ketvirta {
-    margin-top: 2.5em;
-  }
-  section#myProjects .container .right .fotke.fifth {
-    margin-top: 5.5em;
+    margin-top: 1.5em;
   }
 }
 

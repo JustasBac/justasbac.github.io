@@ -230,6 +230,26 @@ gsap.from(".tranzicija5", {
 })
 gsap.from(".tranzicija6", {
     scrollTrigger: {
+        trigger: '.tranzicija6',
+        start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: .2
+})
+gsap.from(".tranzicija7", {
+    scrollTrigger: {
+        trigger: '.tranzicija7',
+        start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: .2
+})
+gsap.from(".tranzicija8", {
+    scrollTrigger: {
         trigger: '.kontaktInfo',
         start: "center bottom" // kai virsus scroll baro paliecia apacia tada startinam! Gali buti "center"
     },

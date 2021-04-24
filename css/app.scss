@@ -1275,7 +1275,6 @@ footer {
                     }
                     .inner.pasirinkti {
                         margin-top: 2em;
-                        margin-bottom: 6em;
                     }
                 }
                 .left.antras,
@@ -1283,8 +1282,13 @@ footer {
                     padding-left: 2em;
                     padding-right: 6em;
                 }
-                .right.antras {
+                .right.pyrmas,
+                .right.antras,
+                .right.third {
                     margin-bottom: 4em;
+                }
+                .right.ketvirtas {
+                    margin-bottom: 1.5em;
                 }
             }
         }
@@ -1341,11 +1345,14 @@ footer {
                     }
                 }
                 .right {
+                    &.ketvirtas {
+                        margin-bottom: 3em;
+                    }
                     .fotke.pirma,
                     .fotke.third {
                         margin-right: 17%;
                         // border: solid;
-                        margin-bottom: 2.5em;
+                        // margin-bottom: 2.5em;
                     }
                     .fotke.antra,
                     .fotke.ketvirta {
@@ -1411,23 +1418,11 @@ footer {
                 .left.third,
                 .left.ketvirtas {
                     .inner {
-                        padding-top: 2em;
+                        margin-top: 3em;
                     }
                 }
                 .left.fifth {
-                    margin-top: 3.5em;
-                }
-                .right {
-                    .fotke.pirma {
-                        margin-bottom: 4.5em;
-                    }
-                    .fotke.third,
-                    .fotke.ketvirta {
-                        margin-top: 2.5em;
-                    }
-                    .fotke.fifth {
-                        margin-top: 5.5em;
-                    }
+                    margin-top: 1.5em;
                 }
             }
         }
