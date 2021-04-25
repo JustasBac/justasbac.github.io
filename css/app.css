@@ -79,13 +79,13 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  margin-top: 4em;
-}
-
 section {
   padding: 1em 0.9em;
   text-align: center;
+}
+
+section#izanga {
+  margin-top: 53px;
 }
 
 section .apieMane {
@@ -221,6 +221,7 @@ nav .logo {
 }
 
 nav ul {
+  border: solid;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -1026,8 +1027,8 @@ footer .footeris {
 }
 
 @media only screen and (min-width: 1050px) {
-  .pirmasPsl {
-    height: 100vh;
+  section#izanga {
+    height: 82vh;
   }
   .pirmasPsl .tekstai .efektui {
     position: relative;
@@ -1173,12 +1174,12 @@ footer .footeris {
   .pirmasPsl .tekstai .wrapper .mygtukas:nth-child(2):hover i {
     color: #211F1F;
   }
-  .pirmasPsl .tekstai .iliustracija {
+  .pirmasPsl .iliustracija {
+    width: 50vw;
     display: unset;
     position: absolute;
-    width: 80vw;
-    left: 15%;
-    top: 25em;
+    right: 16px;
+    bottom: 5%;
   }
   #infoMano {
     padding: 3em 0;
@@ -1313,9 +1314,6 @@ footer .footeris {
   section#myProjects .container .right.fifth {
     margin-bottom: 0.3em;
   }
-  section#izanga {
-    height: 100vh;
-  }
   #infoMano .fonas {
     top: 7%;
   }
@@ -1339,18 +1337,12 @@ footer .footeris {
 }
 
 @media only screen and (min-width: 1140px) and (min-width: 1380px) {
-  section#izanga {
-    height: 100vh;
-  }
   .pirmasPsl {
     height: 100%;
     padding-bottom: 0em;
   }
   .pirmasPsl .tekstai {
     height: 100%;
-  }
-  .pirmasPsl .tekstai .iliustracija {
-    top: 30%;
   }
   .pirmasPsl .tekstai .efektui {
     height: 8.3em;
@@ -1363,7 +1355,7 @@ footer .footeris {
     font-size: 2.8em;
   }
   .pirmasPsl .tekstai h3 {
-    width: 32%;
+    width: 52%;
     font-size: 1.1em;
   }
   #infoMano .fonas {
@@ -1383,11 +1375,7 @@ footer .footeris {
 }
 
 @media only screen and (min-width: 1140px) and (min-width: 1500px) {
-  .pirmasPsl .tekstai .iliustracija {
-    top: 30%;
-  }
-  .pirmasPsl .tekstai h3 {
-    width: 32%;
+  section#izanga .pirmasPsl .tekstai h3 {
     font-size: 1.1em;
     left: 3%;
   }
@@ -1482,6 +1470,10 @@ footer .footeris {
   section#myProjects .container .right .fotke.fifth {
     margin-right: 17%;
   }
+  section#izanga .iliustracija {
+    width: 65vw;
+    bottom: 10%;
+  }
   section#izanga .pirmasPsl .tekstai {
     margin-top: 2em;
   }
@@ -1496,10 +1488,6 @@ footer .footeris {
   }
   section#izanga .pirmasPsl .tekstai h3 {
     width: 32vw;
-  }
-  section#izanga .pirmasPsl .tekstai .iliustracija {
-    width: 60vw;
-    left: 37%;
   }
   #infoMano .aboutMe .grupe1 {
     padding: 0;
